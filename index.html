@@ -1,125 +1,804 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>CSI Portfolio</title>
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;600&family=Prompt:wght@100;300;400;700&display=swap");
-      </style>
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio | Narisara Changsadao</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
 
-</head>
-<body style="font-family: Prompt ;">
-    <!-- Top nav -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">My Portfolio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#AboutMe">About me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Skill">Skill</a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="#">Study</a>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link" href="#Contact">Contact</a>
-              </li>
-            </ul>
-            <span class="navbar-text">
-              นางสาวนริศรา จ่างสะเดา
-            </span>
+    <!--Google Fonts link-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+Thai:400,400i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/bootsnav.css" />
+
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar-collapse">
+    <div class="culmn">
+      <!--Home page style-->
+
+      <nav
+        class="navbar navbar-default navbar-fixed white no-background bootsnav text-uppercase"
+      >
+        <div class="container">
+          <!-- Start Header Navigation -->
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target="#navbar-menu"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand">
+              <img
+                src="assets/images/logo.png"
+                class="logo logo-display"
+                alt=""
+              />
+              <img
+                src="assets/images/logo-black.png"
+                class="logo logo-scrolled"
+                alt=""
+              />
+            </a>
           </div>
+          <!-- End Header Navigation -->
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul
+              class="nav navbar-nav navbar-right"
+              data-in="fadeInDown"
+              data-out="fadeOutUp"
+            >
+              <li><a href="#About">about</a></li>
+              <li><a href="#Skill">skill</a></li>
+              <li><a href="#Performance">performance</a></li>
+              <li><a href="#Contact">contact</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
         </div>
       </nav>
 
-      <!-- Slide img -->
-      <div id="carouselExampleCaptions" class="carousel slide" style="max-height: 500px;">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner" style="max-height: 500px;">
-          <div class="carousel-item active" style="max-height: 500px;">
-            <img src="./resource//img/painting-mountain-lake-with-mountain-background_188544-9126.avif" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item" style="max-height: 500px;">
-            <img src="./resource/img/painting-mountain-lake-with-mountain-background_188544-9126.avif" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item" style="max-height: 500px;">
-            <img src="./resource//img/painting-mountain-lake-with-mountain-background_188544-9126.avif" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      <!--Home Sections-->
 
-      <!-- About me -->
-     <section class="about row d-flex flex-column justify-content-center align-items-center" id="AboutMe">
-        <div class="fs-1 fw-bolder  text-center my-5">
-            About Me
-        </div>
-        <div class="row col-11 d-flex flex-row justify-content-center align-items-center">
-            <div class="text col-6 fs-1 fw-light">Hi I'm <span class="fw-bolder" style="color: #0aaff0;">Narisara Changsadao</span> <br>
-                <h3>นักศึกษาชั้นปี 2<br>คณะเทคโนโลยีสารสนเทศ <br>สาขา วิทยาการคอมพิวเตอร์และนวัตกรรมการพัฒนาซอฟ์ตแวร์</h3>
-                
-            </div>
-            <div class="img col-6 p-0 d-flex justify-content-end align-items-end" style="max-height: 500px;">
-                <img style="max-height: 500px;" src="./resource/img/IMG_7344.jpg" alt="">
-            </div>
-        </div>
-     </section>
+      <section id="hello" class="home bg-mega">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="main_home text-center">
+              <div class="home_text">
+                <h4
+                  class="text-white text-uppercase"
+                  style="font-family: Noto Sans Thai"
+                >
+                  สวัสดี ดีใจที่คุณมานะ
+                </h4>
+                <h1 class="text-white text-uppercase">
+                  <span style="font-family: Noto Sans Thai; color: #ffff"
+                    >ยินดีต้อนรับสู้เว็บ</span
+                  >
+                  Portfolio
+                  <span style="font-family: Noto Sans Thai; color: #ffff"
+                    >ของเรา</span
+                  >
+                </h1>
 
-     <!-- Skill -->
-     <section class="skill row d-flex flex-column justify-content-start align-items-center" style="height: 1000px; background-color:#1f1f1f;" id="Skill">
-        <div class="fs-1 fw-bolder text-center my-5 text-white">
-            My Skill
+                <div class="separator"></div>
+
+                <h5
+                  class="text-uppercase text-white"
+                  style="font-family: Noto Sans Thai"
+                >
+                  เราเป็น introvert ตัวน้อยที่พอจะเข้าสังคมและออกงานได้
+                  จะขอใช้พื้นที่นี้ได้แนะนำตัวกันสักหน่อย และในเว็บนี้จะขอใช้
+                  ภาษาไทยเป็นหลัก
+                  เนื่องจากอยากจะใช้คำที่เป็นตัวเองเพื่อให้ผู้อ่านรู้จักเราผ่านตัวอักษร
+                  <br />(จริงๆคือยังอ่อน grammar eng ด้วยแหละ 👉🏻👈🏻)
+                </h5>
+              </div>
+            </div>
+          </div>
+          <!--End off row-->
         </div>
-        <div class="row px-5 d-flex justify-content-center align-items-center">
-            <div class="col-11">
-                <div class="col-12 bg-white rounded-2 d-flex justify-content-center align-items-center" style="height: 600px;">
-                    <img style="height: 300px;" src="./resource/img/pngwing.com.png" alt="">
-                    
+        <!--End off container -->
+      </section>
+      <!--End off Home Sections-->
+
+      <!--About Sections-->
+      <section id="About" class="feature p-top-100">
+        <div class="container">
+          <div class="row">
+            <div class="main_feature">
+              <div class="col-md-6 m-top-40">
+                <!-- Head Title -->
+                <div class="head_title">
+                  <h2 style="font-family: Noto Sans Thai">
+                    สวัสดีเราชื่อ
+                    <span style="color: rgb(0, 162, 255)">ฮันวา</span> เรียก
+                    <span style="color: rgb(0, 162, 255)">วา</span> ก็ได้
+                  </h2>
+                  <h5 style="opacity: 70%; font-family: Noto Sans Thai">
+                    เราเป็นนักศึกษาชั้นปี 2
+                    สาขาวิชาวิทยาการคอมพิวเตอร์และนวัตกรรมการพัฒนาซอฟต์แวร์
+                    (ชื่อยาวมากเลยขอใช้ชื่อย่อ CSI ละกัน 😅)
+                    คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยศรีปทุม
+                  </h5>
+                  <div class="separator_left"></div>
                 </div>
+                <!-- End off Head Title -->
+
+                <div class="feature_content wow fadeIn m-top-20">
+                  <p
+                    style="
+                      font-weight: 400;
+                      font-size: 1.3rem;
+                      color: #1f1f1f;
+                      font-family: Noto Sans Thai;
+                      line-height: 2rem;
+                    "
+                  >
+                    สาเหตุที่เราเข้ามาเรียนสายนี้ ถ้าเราแบบหยาบๆก็เพราะ
+                    <span style="color: rgb(255, 149, 0); font-weight: 700"
+                      >"เงิน"</span
+                    >
+                    ค่ะ แต่ถ้าให้อธิบายคือ เรามองว่าสายงานนี้ยังเป็นที่ต้องการ
+                    สามารถต่อยอดไปได้หลายทาง และถ้ามีสกิลมากพอ
+                    บวกกับได้อยู่ในที่ดีๆ เงินเดือนก็สูงมาก
+                    และเราก็รู้สึกว่าเราชอบทางนี้ที่สุด
+                  </p>
+
+                  <p
+                    style="
+                      font-weight: 400;
+                      font-size: 1.3rem;
+                      color: #1f1f1f;
+                      font-family: Noto Sans Thai;
+                      line-height: 2rem;
+                    "
+                  >
+                    อาจจะดูเหมือนโม้แต่เราทำได้หลายอย่างเลย ทั้งพากย์เสียง
+                    วาดรูป ตัดต่อรูปและวีดีโอ เคยได้รางวัลแข่งทำหนังสั้นด้วย ✨
+                    พิมพ์มาขนาดนี้ก็ชัดเจนแล้วเราเป็น
+                    <span style="color: rgb(11, 189, 151); font-weight: 700"
+                      >เป็ด</span
+                    >
+                    ทำได้หลายอย่าง
+                    แต่เอาจริงๆรู้สึกว่าเราไปสุดในด้านการเรียนโปรแกรมนะ
+                    เพราะเป็นสิ่งที่ทำแล้วสนุกที่สุดเลย เวลาที่มันมีปัญหา
+                    แต่เราหาทางจนแก้มันได้ จุดนั้นคือฟินสุด 🥰
+                    เพราะแบบนั้นเราเลยรู้ตัวเลยว่าชอบงานสายนี้มากกว่าการไปทางสายนิเทศ
+                    และเราเชื่อว่า
+                    <span
+                      style="
+                        background-color: rgb(0, 162, 255);
+                        color: #ffff;
+                        font-weight: 700;
+                        font-size: 1.4rem;
+                      "
+                      >การได้ทำในสิ่งที่ชอบถึงจะเหนื่อยมันก็ยังสนุกและคุ้มค่าที่จะทำ</span
+                    >
+                  </p>
+
+                  <div class="feature_btns m-top-30">
+                    <a
+                      href="https://github.com/AnemoneTK"
+                      target="_blank"
+                      class="btn btn-default text-uppercase"
+                      style="font-family: Noto Sans Thai; font-size: 1.2rem"
+                      >ดูผลงานของเรา <i class="fa fa-long-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feature_photo wow fadeIn sm-m-top-40">
+                  <div class="photo_border"></div>
+                  <div class="feature_img">
+                    <img src="assets/images/profile.JPG" alt="" />
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+          <!--End off row-->
         </div>
-        
-     </section>
-     <section class="skill row d-flex flex-column justify-content-center align-items-center" style="height: 300px;" id="Contact">
-        <div class="fs-1 fw-bolder text-center my-5 ">
-            Contact <br>
-            narisara.chg@spumail.net
+        <!--End off container -->
+        <br />
+        <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+
+        <div
+          class="container d-flex justify-content-center align-items-center"
+          id="Skill"
+        >
+          <div class="col-md-12">
+            <div class="head_title text-center sm-text-center wow fadeInDown">
+              <h2 class="text-uppercase" style="font-weight: 700">Skill</h2>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top: 100px">
+            <!-- <div class="col-md-12">
+              <div class="head_title text-center sm-text-center wow fadeInDown">
+                <h3 class="text-uppercase">Front end</h3>
+              </div>
+            </div> -->
+
+            <div class="main_skill text-center">
+              <div class="col-md-2 col-sm-6">
+                <div class="model_item m-top-30">
+                  <div class="skill_img">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-6">
+                <div class="model_item m-top-30">
+                  <div class="skill_img">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-6">
+                <div class="model_item m-top-30">
+                  <div class="skill_img">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-6">
+                <div class="model_item m-top-30">
+                  <div class="skill_img">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-2 col-sm-6">
+                <div class="model_item m-top-30">
+                  <div class="skill_img">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-6">
+                <div class="model_item m-top-30">
+                  <div class="skill_img">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-6">
+                <div class="model_item m-top-30">
+                  <div class="skill_img">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-6">
+                <div class="model_item m-top-30">
+                  <div class="skill_img">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-6">
+                <div class="model_item m-top-30">
+                  <div class="skill_img">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original-wordmark.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-6">
+                <div class="model_item m-top-30">
+                  <div class="skill_img">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-2 col-sm-6">
+                <div class="model_item m-top-30">
+                  <div class="skill_img">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-6">
+                <div class="model_item m-top-30">
+                  <div class="skill_img">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-6">
+                <div class="model_item m-top-30">
+                  <div class="skill_img">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-2 col-sm-6">
+                <div class="model_item m-top-30">
+                  <div class="skill_img">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-2 col-sm-6">
+                <div class="model_item m-top-30">
+                  <div class="skill_img">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-2 col-sm-6">
+                <div class="model_item m-top-30">
+                  <div class="skill_img">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-6">
+                <div class="model_item m-top-30">
+                  <div class="skill_img">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-6">
+                <div class="model_item m-top-30">
+                  <div class="skill_img">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        
-     </section>
-     
-</body>
+        <!--End off container -->
+
+        <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+
+        <div class="container">
+          <div class="row">
+            <div class="service_content_area">
+              <div class="col-md-12" style="margin-bottom: 2rem">
+                <div
+                  class="head_title text-center sm-text-center wow fadeInDown"
+                >
+                  <h2 class="text-uppercase" style="font-weight: 700">
+                    Soft Skill
+                  </h2>
+                </div>
+              </div>
+              <div class="col-md-4 service_left wow fadeInLeft">
+                <div class="service_items">
+                  <div class="row">
+                    <!-- ICON -->
+                    <div class="col-xs-3">
+                      <div class="hexagon">
+                        <div class="about-content">
+                          <span class="fa fa-comments"></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-9">
+                      <div class="text-left service_left_text">
+                        <h4
+                          class="main-color"
+                          style="font-family: Noto Sans Thai"
+                        >
+                          การสื่อสาร
+                        </h4>
+                        <p style="font-family: Noto Sans Thai">
+                          เราสามารถพูดคุยติดต่อสื่อสารได้ดีและชัดเจน
+                          และสามารถพูดนำเสนอในที่สาธารณะได้ ถึงจะชอบเก็บตัว
+                          แต่ถึงเวลางาน เวลาประชุม การสื่อสารเป็นสิ่งสำคัญ
+                          เราจะพยายามให้ดีที่สุด
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="service_items">
+                  <div class="row">
+                    <!-- ICON -->
+                    <div class="col-xs-3">
+                      <div class="hexagon">
+                        <div class="about-content">
+                          <span class="fa fa-water"></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-9">
+                      <div class="text-left service_left_text">
+                        <h4
+                          class="main-color"
+                          style="font-family: Noto Sans Thai"
+                        >
+                          การปรับตัว
+                        </h4>
+                        <p style="font-family: Noto Sans Thai">
+                          สามารถปรับตัวเข้ากับเพื่อนใหม่ได้เร็ว
+                          และปรับตัวเข้ากับสถานการ์ณได้ดี จะเรื่องหนักเรื่องเบา
+                          เราพร้อมปรับตารางเวลา
+                          และปรับตัวให้พร้อมรับมือกับงานที่จะเจอ
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end Single Service item -->
+
+                <!-- Service -->
+                <div class="service_items">
+                  <div class="row">
+                    <!-- ICON -->
+                    <div class="col-xs-3">
+                      <div class="hexagon">
+                        <div class="about-content">
+                          <span class="fa-solid fa-people-group"></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-9">
+                      <div class="text-left service_left_text">
+                        <h4
+                          class="main-color"
+                          style="font-family: Noto Sans Thai"
+                        >
+                          การทำงานร่วมกับผู้อื่น
+                        </h4>
+                        <p style="font-family: Noto Sans Thai">
+                          เราเป็นคนเข้าถึงง่าย เฟรนรี่ คุยง่าย
+                          จึงสามารถทำงานร่วมกับทุกคนได้ ไม่ว่าจะในตำแหน่งผู้นำ
+                          หรือ ผู้ตาม แต่เราก็ยังคงมีความเคารพผู้ที่อาวุโสกว่านะ
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 sm-m-top-40 sm-text-center">
+                <div class="service-img wow bounceIn">
+                  <img src="assets/images/Skill.png" alt="Architect Img" />
+                </div>
+              </div>
+
+              <div class="col-md-4 service_right wow fadeInRight sm-m-top-40">
+                <div class="service_items">
+                  <div class="row">
+                    <div class="col-xs-9">
+                      <div class="service_right_text p-l-15 text-right">
+                        <h4
+                          class="main-color"
+                          style="font-family: Noto Sans Thai"
+                        >
+                          มีทัศนคติเชิงบวก
+                        </h4>
+                        <p style="font-family: Noto Sans Thai">
+                          เจอเรื่องอะไร คิดบวกไว้ก่อนแต่ยังคงมองเห็นถึงปัญหา
+                          และหาทางแก้ที่ดีที่สุด ถ้าทีมเครียดเรื่องงาน
+                          มาเครียดเรื่องเราดีกว่า
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="hexagon">
+                        <div class="about-content">
+                          <span class="fa-regular fa-face-smile-beam"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="service_items">
+                  <div class="row">
+                    <div class="col-xs-9">
+                      <div class="service_right_text p-l-15 text-right">
+                        <h4
+                          class="main-color"
+                          style="font-family: Noto Sans Thai"
+                        >
+                          การตัดสินใจ
+                        </h4>
+                        <p style="font-family: Noto Sans Thai">
+                          ในเวลาที่ยากลำบาก
+                          เราก็ต้องการที่จะตัดสินใจที่จะเลือกสิ่งที่ถูกต้อง
+                          หรือดีที่สุดให้กับทีมและงานของเรา
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- ICON -->
+                    <div class="col-xs-3">
+                      <div class="hexagon">
+                        <div class="about-content">
+                          <span class="fa-solid fa-list-check"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="service_items">
+                  <div class="row">
+                    <div class="col-xs-9">
+                      <div class="service_right_text p-l-15 text-right">
+                        <h4
+                          class="main-color"
+                          style="font-family: Noto Sans Thai"
+                        >
+                          การบริหารเวลา
+                        </h4>
+                        <p style="font-family: Noto Sans Thai">
+                          เราไม่ชอบคนที่ไม่ตรงต่อเวลา
+                          เพราะงั้นเราจะไม่เป็นแบบนั้น จะต้องแบ่งเวลาให้ดี
+                          เพื่อจะสามารถส่งงาน หรือไปตามนัดได้ตรงเวลา
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xs-3">
+                      <div class="hexagon">
+                        <div class="about-content">
+                          <span class="fa-regular fa-clock"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Models section-->
+
+      <section id="Performance" class="models bg-grey roomy-80">
+        <div class="container">
+          <div class="row">
+            <div class="main_models text-center">
+              <div class="col-md-12">
+                <div class="head_title text-left sm-text-center wow fadeInDown">
+                  <h2
+                    class="text-uppercase"
+                    style="font-weight: 700; font-family: Noto Sans Thai"
+                  >
+                    ผลงาน และ กิจกรรม ที่เคยทำ
+                  </h2>
+                  <h5 style="font-family: 'Noto Sans Thai'">
+                    <em
+                      >สามารถ <span style="color: rgb(0, 162, 255);">คลิกที่รูป</span> เพื่อดูรายละเอียดเพิ่มเติมได้</em
+                    >
+                  </h5>
+                  <div class="separator_left"></div>
+                </div>
+              </div>
+
+              <a
+                href="https://www.facebook.com/spu.informatics/posts/pfbid0G3oabDB5YhSuwP1sNwEhoi9TEGr9svWRAdHXtTbfg5DFVdRovo4LJsbEXzEyaSi4l"
+                target="_blank"
+                class="col-md-3 col-sm-6"
+              >
+                <div class="model_item m-top-30">
+                  <div class="model_img">
+                    <img
+                      src="https://scontent.fbkk29-4.fna.fbcdn.net/v/t39.30808-6/431692242_881944400394936_7270039693098379745_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=yq0vIApcge8AX86A5aS&_nc_ht=scontent.fbkk29-4.fna&oh=00_AfAlETNSVya81F2SFhmWVqrotvd3AG0NfjTlABY_9ETAtQ&oe=65FBD9F2"
+                      alt=""
+                    />
+                    <div class="model_caption">
+                      <h5 class="text-white">
+                        สตาฟ และ พิธีกร ในงาน <br />
+                        Mini Bootcamp: Front End Mastery
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="https://www.facebook.com/photo/?fbid=747791307143580&set=a.567864431802936" target="_blank" class="col-md-3 col-sm-6">
+                <div class="model_item m-top-30">
+                  <div class="model_img">
+                    <img src="https://scontent.fbkk29-1.fna.fbcdn.net/v/t39.30808-6/358447632_747791303810247_8239819095453628461_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=XJrUBBrawSwAX94eSMT&_nc_ht=scontent.fbkk29-1.fna&oh=00_AfBJPK_RvkaH3FSswFbEe9MEfwHygRnOzzSsRoRM_R-1_w&oe=65FA6F75" alt="" />
+                    <div class="model_caption">
+                      <h5 class="text-white">
+                        เข้ารอบจาก 70 ทีม ในการประกวด The Young Energy Designer Award 2023
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="" target="_blank" class="col-md-3 col-sm-6">
+                <div class="model_item m-top-30">
+                  <div class="model_img">
+                    <img src="" alt="" />
+                    <div class="model_caption">
+                      <h5 class="text-white">
+                        สตาฟ และ พิธีกร ในงาน <br />
+                        Mini Bootcamp: Front End Mastery
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Contact Us Section-->
+      <section id="contact" class="contact fix">
+        <div class="container" id="Contact">
+          <div class="row">
+            <div class="main_contact p-top-100">
+              <div class="col-md-6 sm-m-top-30">
+                <form class="" action="subcribe.php">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Your Name *</label>
+                        <input
+                          id="first_name"
+                          name="name"
+                          type="text"
+                          class="form-control"
+                          required=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Your Email *</label>
+                        <input
+                          id="email"
+                          name="email"
+                          type="text"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label>Your Message *</label>
+                        <textarea class="form-control" rows="6"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <a href="" class="btn btn-default"
+                          >SEND MESSAGE <i class="fa fa-long-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="col-md-6">
+                <div class="contact_img">
+                  <img src="assets/images/contact-img.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End off row -->
+        </div>
+        <!--End off container -->
+      </section>
+      <!--End off Contact Section-->
+
+      <!--Company section-->
+
+      <section id="company" class="company bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="main_company roomy-100 text-center">
+              <h3 class="text-uppercase">Narisara Changsadao</h3>
+              <p>
+                ...
+              </p>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- scroll up-->
+      <div class="scrollup">
+        <a href="#"><i class="fa fa-chevron-up"></i></a>
+      </div>
+      <!-- End off scroll up -->
+    </div>
+
+    <!-- JS includes -->
+    <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2e92bf8ff3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.collapse.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
